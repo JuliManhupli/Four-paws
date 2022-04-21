@@ -1,0 +1,599 @@
+@import "mobile_version.less";
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.45vw;
+}
+
+button {
+  width: 100%;
+  height: 70px;
+  background-color: #51669B;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 40px;
+  -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:    0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow:         0 9px 10px 0 rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    color: #51669B;
+    border-color: currentColor;
+    background-color: white;
+  }
+
+  &:active {
+    outline: none;
+    box-shadow: 0 0 0 3px #51669B,
+    0 0 0 1.5px #51669B;
+  }
+}
+
+h1 {
+  font-size: 40px;
+  margin: 0;
+  padding-top: 80px;
+  text-align:center;
+}
+
+img {
+  width:auto;
+  max-width:100%;
+  height:auto;
+}
+
+a {
+  display:inline-block;
+  color: black;
+  text-decoration: none;
+}
+
+//-----Header-----
+
+//Header landing picture
+.intro {
+  background: url("../pictures/intro.png") center no-repeat;
+  background-size: cover;
+  height: 800px;
+  max-width:100%
+}
+
+//Header picture
+.intro2 {
+  background: url("../pictures/reviews/intro2.png") center no-repeat;
+  background-size: cover;
+  height: 140px;
+  max-width:100%
+}
+
+//Top Menu
+.header_inner {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  nav {
+    font-size: 14px;
+  }
+
+  a {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    position: relative;
+
+    &:before  {
+      content: '';
+      position: absolute;
+      left: 0; bottom: -5px;
+      width: 0;
+      height: 1.5px;
+      background-color: black;
+      transition: width 0.35s;
+    }
+
+    &:hover:before {
+      width: 100%;
+    }
+
+    &:hover {
+      font-weight: bold;
+      transition: font-weight 0.05s;
+    }
+  }
+
+  blockquote {
+    font-weight: bold;
+  }
+}
+
+//Menu mobile version
+.menu {
+  display: none;
+}
+
+//Tagline and button
+.tagline{
+
+  h1 {
+    font-size: 48px;
+    padding-top: 150px;
+    text-align: left;
+  }
+
+  h2 {
+    font-weight: normal;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  button {
+    margin-top: 20px;
+  }
+}
+
+//-----Project-----
+
+//About project
+.project{
+  height: 500px;
+
+  blockquote {
+    border-style: dashed;
+    border-color: white;
+    border-width: 5px;
+    margin: 0;
+    padding-left: 75px;
+    padding-top: 25px;
+    padding-bottom: 55px;
+    border-radius: 50px;
+    line-height: 2;
+  }
+}
+
+//Background of block about project
+.description{
+  background: #FEDAA4;
+  margin-top: 40px;
+  margin-left: 0;
+  padding: 25px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:    0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow:         0 9px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+//-----Choose your pet-----
+
+//Background of block about pets
+.background {
+  background: #FEDAA4;
+  background-size: cover;
+  height: 900px;
+
+}
+
+//Choose pet
+.choose_pet {
+  margin-top: 40px;
+
+  button{
+    margin-top: 30px;
+  }
+
+  a {
+
+    &:hover {
+      border-radius: 50px;
+      -webkit-box-shadow: 0 9px 20px 0 rgba(0, 0, 0, 0.5);
+      -moz-box-shadow:    0 9px 20px 0 rgba(0, 0, 0, 0.5);
+      box-shadow:         0 9px 20px 0 rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+//Block about pet
+.pet{
+  background: #FDB549;
+  border-radius: 50px;
+  height: 500px;
+  -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:    0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow:         0 9px 10px 0 rgba(0, 0, 0, 0.5);
+
+  h2{
+    margin: 0;
+    padding-left: 15%;
+    padding-top: 15px;
+  }
+
+  blockquote{
+    margin: 0;
+    padding-left: 15%;
+    padding-top: 5px;
+  }
+}
+
+//-----Reasons take animal from shelter-----
+
+//Block about reasons take pet
+.reasons {
+  height: 500px;
+}
+
+.reason{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background: #FEDAA4;
+  height: 100px;
+  margin-top: 40px;
+  border-radius: 50px;
+  padding-left: 10%;
+  -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:    0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow:         0 9px 10px 0 rgba(0, 0, 0, 0.5);
+
+  img {
+    position: absolute;
+  }
+
+  blockquote{
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+//-----Reviews-----
+
+//Block about reviews
+.reviews{
+  height: 700px;
+}
+
+//Review
+.review{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  height: 400px;
+}
+
+//Review text and photo
+.review_text{
+  width: 80%;
+  background: #FDB549;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px;
+  line-height: 1.5;
+  -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:    0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow:         0 9px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+//Review text
+.text{
+  padding-bottom: 5%;
+
+  h2 {
+    font-size: 24px;
+    padding-left: 10%;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  blockquote{
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 0;
+  }
+}
+
+//-----How else to help?-----
+
+//Block information with other help
+.another_help {
+  height: 650px;
+
+  button{
+    margin-top: 30px;
+  }
+}
+
+//Information about other help
+.path_help {
+  background: #FEDAA4;
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:    0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow:         0 9px 10px 0 rgba(0, 0, 0, 0.5);
+
+  blockquote {
+    font-weight: bold;
+  }
+}
+
+.another_color {
+  background: #FFCC62;
+}
+
+//-----Footer-----
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 260px;
+  padding-top: 60px;
+
+  blockquote {
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+}
+
+.social_network {
+  display: flex;
+  justify-content: space-between;
+}
+
+.facebook{
+  margin-right: 20px;
+}
+
+.background_footer {
+  background: #BF7955;
+}
+
+//-----Navigate to other pages-----
+
+.navigation {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+//-----Block with choice of parameters for search-----
+
+.menu_search {
+  margin-top: 40px;
+  margin-bottom: 60px;
+
+  h1 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 0;
+  }
+}
+
+//First line
+.menu_first_line {
+  margin-bottom: 20px;
+
+  button {
+    height: 120px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background: #FEDAA4;
+    border-color: #FEDAA4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:active {
+      outline: none;
+      box-shadow: 0 0 0 3px #FEDAA4,
+      0 0 0 1.5px #FEDAA4;
+    }
+  }
+
+  img {
+    margin-left: 70px;
+    margin-right: 100px;
+  }
+}
+
+//Second line
+.menu_second_line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  blockquote {
+    font-weight: bold;
+  }
+
+  select {
+    height: 60px;
+    font-size: 20px;
+    border-radius: 50px;
+    border-color: white;
+    -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    0 9px 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow:         0 9px 10px 0 rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 250px;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+.menu_second_line_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//Third line
+.menu_third_line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+
+  blockquote {
+    font-weight: bold;
+  }
+
+  button {
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background: #FEDAA4;
+    border-color: #FEDAA4;
+    color: black;
+
+    &:active {
+      outline: none;
+      box-shadow: 0 0 0 3px #FEDAA4,
+      0 0 0 1.5px #FEDAA4;
+    }
+  }
+}
+
+.menu_third_line_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+}
+
+.first {
+  width: 230px;
+}
+
+.second {
+  width: 310px;
+}
+
+.third {
+  width: 420px;
+}
+
+//-----Block about all pets-----
+
+.pets {
+  padding-bottom: 30px;
+}
+
+//-----Pages-----
+
+.pages{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  margin: 60px auto;
+}
+
+.numbers {
+  font-weight: bold;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  background: #FEDAA4;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 90px;
+}
+
+//-----Description of pet-----
+.all_description_pet{
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+//Photo of animal
+.photo {
+
+  button {
+    background: none;
+    border-color: white;
+    height: 30px;
+    box-shadow: none;
+  }
+}
+
+//Another photo
+.another_photo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+  height: 30px;
+  margin: 30px auto;
+}
+
+//Photo
+.pet_photo {
+
+  img {
+    width: 100%;
+  }
+}
+
+//Description about pet
+.description_pet {
+
+  h1 {
+    padding-top: 0;
+    text-align: left;
+  }
+}
+
+//Short description about pet
+.short_description_pet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  blockquote {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+//Text
+.description_pet_text {
+  background: #FEDAA4;
+  width: 100%;
+  padding: 25px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:    0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow:         0 9px 10px 0 rgba(0, 0, 0, 0.5);
+
+  blockquote {
+    border-style: dashed;
+    border-color: white;
+    border-width: 5px;
+    margin: 0;
+    padding-left: 50px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    border-radius: 50px;
+    line-height: 1.5;
+  }
+}
+
+
+
