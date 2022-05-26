@@ -316,31 +316,19 @@
   }
   .pets {
     padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
   }
-  .pages {
-    width: 330px !important;
-    margin: 30px auto;
+  .pets a:hover {
+    height: 160px !important;
+    width: 330px;
+    margin-bottom: 15px !important;
   }
-  .numbers {
-    width: 180px !important;
-  }
-  .circle {
-    width: 20px !important;
-    height: 20px !important;
+  .pets button {
+    margin-bottom: 30px !important;
   }
   .all_description_pet {
     margin-top: 60px !important;
     margin-bottom: 30px !important;
-  }
-  .photo button {
-    height: 18px !important;
-  }
-  .another_photo {
-    width: 75px;
-    margin: 15px auto;
-  }
-  .another_photo img {
-    width: 18px;
   }
   .pet_photo {
     width: 274px !important;
@@ -359,8 +347,8 @@
   }
   .description_pet h1 {
     padding-top: 0;
-    margin-top: -425px;
-    margin-bottom: 350px;
+    margin-top: -340px;
+    margin-bottom: 310px;
     width: 330px;
     font-size: 30px !important;
   }
@@ -382,6 +370,91 @@
     padding: 20px 15px 20px !important;
     border-width: 2px !important;
     text-align: center;
+  }
+  .window {
+    width: 330px !important;
+    height: 375px !important;
+    margin: 75px auto;
+    background: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .form {
+    height: 350px !important;
+    padding-top: 15px !important;
+  }
+  .form .input {
+    width: 275px !important;
+    height: 20px !important;
+    font-size: 16px !important;
+  }
+  .button_reg {
+    height: 50px !important;
+    font-size: 16px !important;
+    width: 300px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 0 !important;
+  }
+  .help_block {
+    height: 600px !important;
+  }
+  .help_block img {
+    margin-top: 25px !important;
+    width: 300px !important;
+    height: 300px !important;
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .help_text {
+    margin: 25px 50px 0 !important;
+    height: 200px !important;
+  }
+  .help_text h2 {
+    padding-top: 25px !important;
+  }
+  .background2 {
+    height: 600px !important;
+  }
+  .contacts {
+    height: 700px !important;
+    margin-top: 20px !important;
+    width: 330px !important;
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contacts_text {
+    margin-top: 20px !important;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+  .contacts_info {
+    display: flex !important;
+    justify-content: center !important;
+    font-weight: normal !important;
+    margin: 10px 0;
+  }
+  .contacts_info img {
+    height: 30px !important;
+  }
+  .contacts_info blockquote {
+    width: 200px;
+  }
+  .contacts_info_mobile {
+    display: none !important;
+  }
+  .map img {
+    margin-top: 15px !important;
+    width: 300px !important;
+    height: 300px !important;
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 html,
@@ -755,45 +828,24 @@ a {
   width: 420px;
 }
 .pets {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
-.pages {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 500px;
-  margin: 60px auto;
+.pets a:hover {
+  border-radius: 50px;
+  -webkit-box-shadow: 0 9px 20px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 9px 20px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 9px 20px 0 rgba(0, 0, 0, 0.5);
 }
-.numbers {
-  font-weight: bold;
-  width: 250px;
-  display: flex;
-  justify-content: space-between;
-}
-.circle {
-  background: #FEDAA4;
-  width: 35px;
-  height: 35px;
-  text-align: center;
-  border-radius: 90px;
+.pets button {
+  margin-top: 45px;
+  margin-bottom: 45px;
 }
 .all_description_pet {
   margin-top: 30px;
   margin-bottom: 70px;
 }
-.photo button {
-  background: none;
-  border-color: white;
-  height: 30px;
-  box-shadow: none;
-}
-.another_photo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 130px;
-  height: 30px;
-  margin: 30px auto;
+.all_description_pet button {
+  margin-top: 45px;
 }
 .pet_photo img {
   width: 100%;
@@ -830,5 +882,139 @@ a {
   padding-bottom: 35px;
   border-radius: 50px;
   line-height: 1.5;
+}
+.window {
+  width: 700px;
+  height: 475px;
+  margin: 75px auto;
+  border-radius: 50px;
+  background: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.form {
+  height: 450px;
+  padding-top: 25px;
+  text-align: center;
+}
+.form .input {
+  border-radius: 15px;
+  width: 600px;
+  height: 30px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.45vw;
+}
+.button_reg {
+  width: 600px;
+  height: 70px;
+  background-color: #51669B;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 40px;
+  margin-top: 20px;
+}
+.button_reg:hover {
+  color: #51669B;
+  border-color: currentColor;
+  background-color: white;
+}
+.button_reg:active {
+  outline: none;
+  box-shadow: 0 0 0 3px #51669B, 0 0 0 1.5px #51669B;
+}
+.gray_background {
+  display: none;
+  opacity: 0.8;
+  padding: 15px;
+  background-color: rgba(1, 1, 1, 0.75);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+}
+.help_block {
+  height: 500px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.help_block h1 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  padding-top: 0;
+}
+.help_block img {
+  margin-top: 50px;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.help_text {
+  margin: 100px 50px 0;
+  height: 250px;
+  background: #FEDAA4;
+  text-align: center;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.help_text h2 {
+  padding-top: 40px;
+}
+.background2 {
+  background: #FEDAA4;
+  background-size: cover;
+  height: 500px;
+}
+.another_color {
+  background: #FFCC62;
+}
+.contacts {
+  height: 650px;
+}
+.contacts h1 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  padding-top: 0;
+}
+.contacts_text {
+  margin-top: 125px;
+  margin-left: 50px;
+}
+.contacts_info {
+  display: flex;
+  justify-content: left;
+  font-weight: bold;
+  align-items: center;
+  margin: 10px 0;
+}
+.contacts_info img {
+  height: 50px;
+}
+.map img {
+  margin-top: 50px;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=styles.css.map */
