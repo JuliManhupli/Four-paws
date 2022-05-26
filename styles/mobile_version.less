@@ -23,7 +23,6 @@
   }
 
   //-----Header-----
-
   //Header landing picture
   .intro {
     height: 465px !important;
@@ -82,7 +81,6 @@
   }
 
   //-----Project-----
-
   //About project
   .project {
     min-height: 380px;
@@ -104,7 +102,6 @@
   }
 
   //-----Choose your pet-----
-
   //Background of block about pets
   .background {
     height: 710px !important;
@@ -154,7 +151,7 @@
       width: 80px;
       font-size: 16px;
       text-align: center !important;
-      }
+    }
 
     img {
       height: 160px;
@@ -163,7 +160,6 @@
   }
 
   //-----Reasons take animal from shelter-----
-
   //Block about reasons take pet
   .reasons {
     height: 450px !important;
@@ -199,7 +195,6 @@
   }
 
   //-----Reviews-----
-
   //Block about reviews
   .reviews {
     height: 670px !important;
@@ -266,7 +261,6 @@
   }
 
   //-----How else to help?-----
-
   //Block information with other help
   .another_help {
     height: 400px !important;
@@ -302,7 +296,6 @@
   }
 
   //-----Footer-----
-
   .footer {
     height: 150px !important;
     width: 330px !important;
@@ -430,45 +423,25 @@
   //-----Block about all pets-----
   .pets {
     padding-bottom: 0 !important;
-  }
+    margin-bottom: 0 !important;
 
-  //-----Pages-----
-  .pages {
-    width: 330px !important;
-    margin: 30px auto;
-  }
+    a {
+      &:hover {
+        height: 160px !important;
+        width: 330px;
+        margin-bottom: 15px !important;
+      }
+    }
 
-  .numbers {
-    width: 180px !important;
-  }
-
-  .circle {
-    width: 20px !important;
-    height: 20px !important;
+    button {
+      margin-bottom: 30px !important;
+    }
   }
 
   //-----Description of pet-----
-  .all_description_pet{
+  .all_description_pet {
     margin-top: 60px !important;
     margin-bottom: 30px !important;
-  }
-
-  //Photo of animal
-  .photo {
-
-    button {
-      height: 18px !important;
-    }
-  }
-
-  //Another photo
-  .another_photo {
-    width: 75px;
-    margin: 15px auto;
-
-    img {
-      width: 18px;
-    }
   }
 
   //Photo
@@ -494,8 +467,8 @@
 
     h1 {
       padding-top: 0;
-      margin-top: -425px;
-      margin-bottom: 350px;
+      margin-top: -340px;
+      margin-bottom: 310px;
       width: 330px;
       font-size: 30px !important;
     }
@@ -523,6 +496,114 @@
       padding: 20px 15px 20px !important;
       border-width: 2px !important;
       text-align: center;
+    }
+  }
+
+  //--------Form-------
+  .window {
+    width: 330px !important;
+    height: 375px !important;
+    margin: 75px auto;
+    background: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .form {
+    height: 350px !important;
+    padding-top: 15px !important;
+
+    .input {
+      width: 275px !important;
+      height: 20px !important;
+      font-size: 16px !important;
+    }
+  }
+
+  .button_reg {
+    height: 50px !important;
+    font-size: 16px !important;
+    width: 300px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 0 !important;
+  }
+
+  //------------Page about way of help---------
+  .help_block {
+    height: 600px !important;
+
+    img {
+      margin-top: 25px !important;
+      width: 300px !important;
+      height: 300px !important;
+      display: block !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .help_text {
+    margin: 25px 50px 0 !important;
+    height: 200px !important;
+
+    h2 {
+      padding-top: 25px !important;
+    }
+  }
+
+  //Background of block about vol
+  .background2 {
+    height: 600px !important;
+  }
+
+  //--------------Contacts---------------
+  .contacts {
+    height: 700px !important;
+    margin-top: 20px !important;
+    width: 330px !important;
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contacts_text {
+    margin-top: 20px !important;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+
+  .contacts_info {
+    display: flex !important;
+    justify-content: center !important;
+    font-weight: normal !important;
+    margin: 10px 0;
+
+    img {
+      height: 30px !important;
+    }
+
+    blockquote {
+      width: 200px;
+    }
+  }
+
+  .contacts_info_mobile {
+    display: none !important;
+  }
+
+  .map {
+
+    img {
+      margin-top: 15px !important;
+      width: 300px !important;
+      height: 300px !important;
+      display: block !important;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
